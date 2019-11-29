@@ -1,12 +1,16 @@
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class TemperatureConverter {
 
     double celsius;
 
+    NumberFormat formatter = new DecimalFormat("#0.0");
+
     public void convertCelsiusToFahrenheit() {
         double fahrenheit = (9*celsius)/5 + 32;
-        System.out.println(celsius + "C = " + fahrenheit + "F");
+        System.out.println(celsius + "C = " + formatter.format(fahrenheit) + "F");
     }
 
     public TemperatureConverter(double celsius) {
@@ -23,8 +27,5 @@ class Convert {
         TemperatureConverter tc = new TemperatureConverter(c);
         //System.out.println("Temperature in Fahrenheit is - ");
         tc.convertCelsiusToFahrenheit();
-
-
-
     }
 }
