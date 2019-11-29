@@ -25,7 +25,6 @@ class Convert {
         System.out.println("Please enter the temperature in Celsius - ");
         double c = scanner.nextDouble();
         TemperatureConverter tc = new TemperatureConverter(c);
-        //System.out.println("Temperature in Fahrenheit is - ");
         tc.convertCelsiusToFahrenheit();
     }
 }
