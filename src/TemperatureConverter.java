@@ -6,7 +6,7 @@ public class TemperatureConverter {
 
     double celsius;
 
-    NumberFormat formatter = new DecimalFormat("#0.0");
+    NumberFormat formatter = new DecimalFormat("#.#");
 
     public void convertCelsiusToFahrenheit() {
         double fahrenheit = (9*celsius)/5 + 32;
